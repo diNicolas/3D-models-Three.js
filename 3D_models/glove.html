@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>3D glove</title>
-    <script src="../libs/three.js"></script>
-    <script src="../libs/dat.gui.min.js"></script>
-    <script src="../libs/OBJLoader.js"></script>
-    <script src="../libs/MTLLoader.js"></script>
-    <script src="../libs/OBJMTLLoader.js"></script>
-    <script src="../libs/OrbitControls.js"></script>
+    <script src="libs/three.js"></script>
+    <script src="libs/dat.gui.min.js"></script>
+    <script src="libs/OBJLoader.js"></script>
+    <script src="libs/MTLLoader.js"></script>
+    <script src="libs/OBJMTLLoader.js"></script>
+    <script src="libs/OrbitControls.js"></script>
     <style>
         body {
             margin: 0;
@@ -53,7 +53,7 @@
         document.body.appendChild(renderer.domElement);
 
         var loader = new THREE.OBJMTLLoader();
-        loader.load("../models/glove.obj", "../models/glove.mtl", function (obj) {
+        loader.load("models/glove.obj", "models/glove.mtl", function (obj) {
             obj.translateY(-3);
             obj.name = 'glove';
 
